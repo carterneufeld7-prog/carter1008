@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Clicker Game</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 100px;
+        }
+        button {
+            padding: 15px 30px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Clicker Game</h1>
+    <h2>Score: <span id="score">0</span></h2>
+
+    <button onclick="addPoint()">Click Me</button>
+
+    <script>
+        let score = 0;
+
+        function addPoint() {
+            score++;
+            document.getElementById("score").textContent = score;
+        }
+    </script>
+
+</body>
+</html>
